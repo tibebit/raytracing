@@ -22,7 +22,13 @@ specificare posizione, raggio e colore.
 
 
 ## Esempio
-### Esecuzione
+### Craezione dell'eseguibile
+Digitare il seguente comando da terminale per compilare il programma secondo le direttive specificate nel Makefile
+```bash
+make
+```
+### Esecuzione del programma
+Esempio di esecuzione 
 ```bash
 ./raytracer test.txt immagine.ppm 1920 1080
 ```
