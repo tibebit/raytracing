@@ -77,9 +77,7 @@ void render_scene(Scene* scene, const char* output_filename, int width, int heig
         }
     }
 
-    // sincronizzazione su disco
-    // MY_SYNC fa in modo che la funzione non ritorni fino
-    // fino a che tutti i dati non sono scritti
+    // forza sincro sul disco
     if (msync(map, image_size, MS_SYNC) == -1) {
         perror("Errore con msync");
     }
