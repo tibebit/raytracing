@@ -3,8 +3,6 @@
 #define PPM_H
 #include <sys/mman.h>
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include "scene.h"
 
 void render_scene(Scene* scene, const char* output_filename, int width, int height);
